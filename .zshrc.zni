@@ -1,0 +1,13 @@
+
+# auto-inserted by @update.afni.binaries :
+export PATH=$PATH:/home/vtekaev/abin
+
+# auto-inserted by @update.afni.binaries :
+#    set up tab completion for AFNI programs
+if [ -f $HOME/.afni/help/all_progs.COMP.zsh ]
+then
+   autoload -U +X bashcompinit && bashcompinit
+   autoload -U +X compinit && compinit \
+      && source $HOME/.afni/help/all_progs.COMP.zsh
+fi
+
